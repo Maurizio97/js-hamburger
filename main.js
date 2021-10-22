@@ -6,7 +6,7 @@ let hamburgerMenu = document.querySelector(".hamburger-menu")
 const openHamburgerMenu = document.querySelector(".fas")
 const closeHamburgerMenu = document.querySelector(".hamburger-menu .close")
 
-
+//open hamburgher menu
 openHamburgerMenu.addEventListener("click",
 
     function(){
@@ -15,6 +15,7 @@ openHamburgerMenu.addEventListener("click",
 
 )
 
+//open hamburgher menu
 closeHamburgerMenu.addEventListener("click",
 
     function(){
@@ -23,7 +24,7 @@ closeHamburgerMenu.addEventListener("click",
 
 )
 
-
+//media query tablet
 const mediaQuery = window.matchMedia("(min-width: 1000px)")
 
 function handleTabletChange(e) {
@@ -35,6 +36,8 @@ function handleTabletChange(e) {
     }
  }
 
+ //register event listener
  mediaQuery.addListener(handleTabletChange)
 
+ // Initial check
  handleTabletChange(mediaQuery)
