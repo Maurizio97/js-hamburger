@@ -7,7 +7,7 @@ const openHamburgerMenu = document.querySelector(".fas")
 const closeHamburgerMenu = document.querySelector(".hamburger-menu .close")
 
 //open hamburgher menu
-openHamburgerMenu.addEventListener("click",
+/* openHamburgerMenu.addEventListener("click",
 
     function(){
         hamburgerMenu.style.display = "block"
@@ -21,23 +21,23 @@ closeHamburgerMenu.addEventListener("click",
     function(){
         hamburgerMenu.style.display = "none"
     }
+ 
+)
+ */
+openHamburgerMenu.addEventListener("click",
+
+    function(){
+        hamburgerMenu.className = "hamburger-menu active"
+    }
 
 )
 
-//media query tablet
-const mediaQuery = window.matchMedia("(min-width: 1000px)")
+//open hamburgher menu
+closeHamburgerMenu.addEventListener("click",
 
-function handleTabletChange(e) {
-    // Check if the media query is true
-    if (e.matches) {
-      // Then log the following message to the console
-      hamburgerMenu.style.display = "none"
-      console.log('Media Query Matched!')
+    function(){
+        hamburgerMenu.className = "hamburger-menu"
     }
- }
 
- //register event listener
- mediaQuery.addListener(handleTabletChange)
+)
 
- // Initial check
- handleTabletChange(mediaQuery)
